@@ -19,7 +19,12 @@ export const ProductView = () => {
       <div className="product_view__main">
         {testProducts?.length > 0 &&
           testProducts.map((item) => (
-            <Card img={item.image} title={item.title} price={item.price} />
+            <Card
+              key={item.id}
+              img={item.image}
+              title={item.title}
+              price={item.price}
+            />
           ))}
       </div>
     </div>
