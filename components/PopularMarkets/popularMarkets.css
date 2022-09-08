@@ -1,0 +1,47 @@
+.popular_markets {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.popular_markets__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  padding-bottom: 30px;
+}
+
+.popular_markets__main {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.popular_markets__item {
+  width: 23.5%;
+}
+
+.popular_markets__see_all {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+.btn_see_all {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid #8D8D8D;
+
+/* Shadow */
+
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.05);
+border-radius: 5px;
+padding: 18px 92px;
+}

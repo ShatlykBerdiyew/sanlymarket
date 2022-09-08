@@ -1,0 +1,42 @@
+.mobileAppsInfo {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  background: #f3f3f3;
+  padding-left: 26px;
+  padding-right: 86px;
+
+  display: flex;
+  justify-content: space-between;
+
+  /* margin-bottom: 50px; */
+  margin-top: 121px;
+}
+
+.mobileAppsInfo__store {
+  width: 50%;
+}
+
+.mobileAppsInfo__store > p {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 57px;
+
+  color: #000000;
+}
+
+.mobileAppsInfo__store_apps {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+
+.mobileAppsInfo__barcode {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+}

@@ -1,0 +1,40 @@
+.product_view {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* display: flex; */
+}
+
+.product_view__head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.product_view__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+
+  color: #000000;
+}
+
+.product_view__seeAll {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #000000;
+}
+
+.product_view__main {
+  display: flex;
+  gap: 25px;
+}

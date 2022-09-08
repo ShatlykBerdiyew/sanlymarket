@@ -1,10 +1,21 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { Banner } from "../components/Banner";
+import { FooterComponent } from "../components/Footer";
 import { Header } from "../components/Header";
+import { MobileAppsInfo } from "../components/MobileAppInfo";
+import { PopularMarkets } from "../components/PopularMarkets";
+import { ProductView } from "../components/ProductsView";
+import { asyncGetHomeDatas } from "../store/asyncActions.js/asyncGetHomeDatas";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(asyncGetHomeDatas());
+  }, []);
   return (
     <div className={styles.container}>
       <Head>
@@ -15,11 +26,16 @@ export default function Home() {
       <Header>
         <Header />
       </Header>
-      <main style={{ backgroundColor: "#f9f9f9" }}>
+      <main style={{ backgroundColor: "#f9f9f9", paddingBottom: "50px" }}>
         <Banner />
+        <PopularMarkets />
+        <ProductView />
+        <MobileAppsInfo />
       </main>
 
-      <footer></footer>
+      <footer>
+        <FooterComponent />
+      </footer>
     </div>
   );
 }
